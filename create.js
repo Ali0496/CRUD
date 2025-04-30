@@ -24,7 +24,7 @@ form.addEventListener("submit", (e)=>{
     })
     .then((res) => {
       if (res.ok) {
-        form.reset(); // ✅ This clears the form inputs
+        form.reset();
       } else {
         alert("Failed to create course");
       }
