@@ -21,5 +21,16 @@ form.addEventListener("submit", (e)=>{
             "Content-type":"application/json"
         },
         body:JSON.stringify(tayyor)
+    })
+    .then((res) => {
+      if (res.ok) {
+        form.reset(); // ✅ This clears the form inputs
+      } else {
+        alert("Failed to create course");
+      }
+    })
+    .catch((err) => {
+      console.error("Error:", err);
+      alert("Something went wrong!");
     });
 })
