@@ -1,3 +1,30 @@
+.a_tag{
+  gap: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  margin-top: 30px;
+
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+  cursor: pointer;
+  transition: 500ms;
+  font-weight: 600;
+
+}
+a:hover {
+  transform: scale(1.1);
+  transition: 500ms;
+}
+
+h1 {
+  text-align: center;
+  color: black;
+}
 .wrapper {
   width: 1200px;
   display: grid;
